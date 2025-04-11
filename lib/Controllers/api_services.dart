@@ -141,18 +141,7 @@ class ApiService extends GetxService {
     File? video,
   }) async {
     Uri url = Uri.parse(baseUrl + endpoint);
-// '': '4',
-//   '': 'test',
-//   '': '9908262399',
-//   '': 'test',
-//   '': 'test',
-//   '': 'test',
-//   '': 'test',
-//   '': 'test',
-//   '': 'test',
-//   '': '500033',
-//   '': 'test',
-//   '': 'health'
+
     try {
       var request = http.MultipartRequest('POST', url)
         ..fields['volunter_id'] = payload['volunter_id'] ?? ""
